@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#stripe {
+  height: 200px;
+  width: 100%;
+  background-color: #008278;
+  opacity: 0.1;
+  z-index: -1;
+  margin-top: 100px;
+  position: absolute;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  color: #022851;
+  margin-right: 20px;
+}
+
+.header_element {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.logo_element {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 130px;
+  height: 130px;
+  padding: 20px 0;
+}
+
+#logo_text {
+  width: 100%;
+  padding: 50px 0;
+}
+
+#logotext2 {
+  font-family: Monsterrat;
+  font-weight: bold;
+  font-size: 16px;
+  color: #008278;
+}
+
+body {
+  font-family: "Montserrat", Helvetical, sans-serif;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.tile {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+figure {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.body_img {
+  width: 100%;
+  height: auto;
+  z-index: 9;
+}
+
+.bodytext {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 100%;
+  font-size: 20px;
+  font-family: Monsterrat;
+  height: auto;
+}
+
+.captions {
+  width: 100%;
+  font-size: 14px;
+  font-family: Monsterrat;
+}
+
+@media screen and (max-width: 1000px) {
+  #stripe {
+    height: 100px;
+    margin-top: 0px;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .bodytext {
+    font-size: 18px;
+  }
+  main {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .body_img {
+    order: 1;
+  }
+  .bodytext {
+    order: 3;
+  }
+  .captions {
+    order: 2;
+  }
+}
